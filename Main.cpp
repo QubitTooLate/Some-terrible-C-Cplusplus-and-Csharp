@@ -128,6 +128,8 @@ void Release()
 
 	delete[] GameBoard;
 	delete[] Buffer;
+	
+	ReleaseDC(WindowHandle, WindowDeviceContextHandle);
 
 	SAFE_RELEASE(Map);
 
