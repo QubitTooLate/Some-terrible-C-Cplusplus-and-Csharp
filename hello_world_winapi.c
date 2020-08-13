@@ -64,7 +64,6 @@ INT WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine
 			BOOL succes;
 			while ((succes = GetMessageW(&msg, (HWND)NULL, 0, 0)) != 0 && succes != -1)
 			{
-				TranslateMessage(&msg);
 				DispatchMessageW(&msg);
 			}
 
